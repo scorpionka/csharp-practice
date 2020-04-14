@@ -1,15 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Lect11.Shapes
 {
-    class Triangle : Shape
+    public class Triangle : Shape
     {
-        public const string Name = "triangle";
-        int SideA { get; set; }
-        int SideB { get; set; }
-        double Area { get; set; }
+        public int SideA { get; set; }
+        public int SideB { get; set; }
+        public Triangle(int sideA, int sideB)
+        {
+            Name = "triangle";
+            SideA = sideA;
+            SideB = sideB;
+        }
         public override void CalculateArea()
         {
             base.CalculateArea();

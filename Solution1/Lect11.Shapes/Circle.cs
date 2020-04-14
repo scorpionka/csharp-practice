@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Lect11.Shapes
+﻿namespace Lect11.Shapes
 {
-    class Circle : Shape
+    public class Circle : Shape
     {
-        const double Pi = 3.14;
-        public const string Name = "circle";
-        int Radius { get; set; }
-        double Area { get; set; }
+        public const double Pi = 3.1415;
+        public int Radius { get; set; }
+        public Circle(int radius)
+        {
+            Name = "circle";
+            Radius = radius;
+        }
         public override void CalculateArea()
         {
             base.CalculateArea();
