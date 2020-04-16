@@ -11,7 +11,7 @@ namespace Lect12.Task
         }
         public UniqueItem(int id)
         {
-            UniqueItem.id = id;
+            UniqueItem.id = id + 1;
         }
     }
     class Program
@@ -21,6 +21,7 @@ namespace Lect12.Task
             UniqueItem item1 = new UniqueItem();
             UniqueItem item2 = new UniqueItem();
             UniqueItem item3 = new UniqueItem();
+            Console.WriteLine(UniqueItem.id);
             UniqueItem item4 = new UniqueItem(6);
             UniqueItem item5 = new UniqueItem();
             Console.WriteLine(UniqueItem.id);
