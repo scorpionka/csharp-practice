@@ -16,6 +16,10 @@ namespace Lect12.Task
             UniqueItem.id = id;
             idOfObject = id;
         }
+        public UniqueItem(int id)
+        {
+            UniqueItem.id = id + 1;
+        }
     }
     class Program
     {
